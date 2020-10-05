@@ -27,11 +27,17 @@ void reverse(stack<int> st) {
 
 int main() {
     stack<int> st;
-	st.push(1);
-	st.push(2);
-	st.push(3);
-	st.push(4);
-	st.push(5);
+	cout<<"enter the number to perform push";
+	int k;
+	cin>>k;
+	int no;
+	cout<<"enter the numbers to push to stack";
+	for(int i=0;i<k;i++)
+	{
+		//cout<<"enter the number to push to stack";
+		cin>>no;
+		st.push(no);
+	}
 
 	reverse(st);
 	cout << "Reversed Stack" << endl;
